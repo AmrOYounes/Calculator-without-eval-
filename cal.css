@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding-top:50px;
+    background-image: url("tech-quote.jpg");
+    background-size: cover;
+    
+}
+.calculator{
+    margin: 0 auto;
+    border: 2px solid #111;
+    border-radius: 5px;
+    max-width: 400px;
+    
+   
+   
+}
+
+.calculator input{
+    border: none;
+    border-bottom: 2px solid #111;
+    padding: 20px;
+    width: 100%;
+    text-align: right;
+    font-size: 40px;
+    background: aliceblue;
+    
+
+}
+.calculator-buttons{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    padding:20px;
+    background: aliceblue;
+    
+}
+
+.button{
+    border: 1px solid #111;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 22px;
+    background: rgba(0, 0, 0,0.5);
+    color: #eee;
+    cursor: pointer;
+}
+.button:hover{
+    background: rgb(230, 200, 101);
+}
+
+/* .is-zero, .is-clear{
+    grid-column: span 3;
+} */
+.is-clear{
+  background: #3572D8;
+}
+.is-equals{
+    background: #28D060;
+}
